@@ -1,0 +1,119 @@
+<main class="profile-page">
+  <section class="section-profile-cover section-shaped my-0">
+    <!-- Circles background -->
+    <div class="shape shape-style-5 bg-gradient-info shape-primary alpha-3">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- SVG separator -->
+    <div class="separator separator-bottom separator-skew">
+      <svg
+        x="0"
+        y="0"
+        viewBox="0 0 2360 100"
+        preserveAspectRatio="none"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="card card-profile shadow mt--300 pb-4">
+        <div class="px-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 order-lg-2">
+              <div class="card-profile-image">
+                <a href="javascript:void(0)">
+                  <img
+                    src="./assets/img/theme/covid.jpeg"
+                    width="150"
+                    height="150"
+                    class="rounded-circle"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
+              <div class="card-profile-actions py-4 mt-lg-0">
+                <a
+                  href="https://www.gouvernement.fr/info-coronavirus"
+                  class="btn btn-sm btn-danger text-white mr-4"
+                  >Gouv.fr</a
+                >
+                <a
+                  href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses"
+                  class="btn btn-sm btn-info text-white float-right"
+                  >WHO</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 order-lg-1">
+              <div class="card-profile-stats d-flex justify-content-center">
+                <div>
+                  <span class="description">Alexandre</span>
+                  <span class="heading">MOURIEC</span>
+                </div>
+                <div>
+                  <span class="description">Romain</span>
+                  <span class="heading">GEFFROY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <h3>Informations Covid-19 🦠</h3>
+            <div class="h6 font-weight-300">
+              <i class="ni location_pin mr-2"></i>Liste de sources
+              <a
+                href="https://fortune.com/2020/03/14/coronavirus-updates-twitter-accounts-covid-19-news/"
+                >fiables</a
+              >
+              sur le COVID-19
+            </div>
+          </div>
+          <section *ngFor="let tweets of myTimeline">
+            <div
+              class="card shadow shadow-lg--hover rounded-lg mt-5 mb-5 col-md-7 offset-md-3"
+            >
+              <div class="card-body tweet-wrap row border m-4 mr-2">
+                <div class="">
+                  <div class="tweet-header col-md-12">
+                    <div class="rounded-circle text-white avatar">
+                      <img
+                        src="{{ tweets.user.profile_image_url }}"
+                        height="48"
+                        width="48"
+                      />
+                    </div>
+
+                    <h5 class="title text-info tweet-header-info">
+                      <a
+                        href="https://twitter.com/{{ tweets.user.screen_name }}"
+                      >
+                        {{ tweets.user.name }}</a
+                      >
+                    </h5>
+                  </div>
+                  <div class="mt-1 mb-1">{{ tweets.full_text }}</div>
+                  <a
+                    href="https://twitter.com/{{
+                      tweets.user.screen_name
+                    }}/status/{{ tweets.id_str }}"
+                    class="text-info d-flex justify-content-end"
+                    >Voir tweet original</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
