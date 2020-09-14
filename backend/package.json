@@ -1,0 +1,25 @@
+{
+  "name": "twitter-api-project-backend",
+  "version": "1.0.0",
+  "description": "Backend Twitter API Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "servdev": "nodemon app.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Alexandre MOURIEC - Romain GEFFROY",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
