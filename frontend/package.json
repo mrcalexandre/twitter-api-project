@@ -33,7 +33,7 @@
     "@angular/cli": "9.1.12",
     "@angular/compiler-cli": "9.1.12",
     "@angular/language-service": "9.1.12",
-    "purgecss": "^2.3.0",
+    "purgecss": "^3.0.0",
     "tslint": "6.0.0",
     "typescript": "3.7.5"
   }
