@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "9.1.12",
     "@angular/router": "9.1.12",
     "@ng-bootstrap/ng-bootstrap": "6.0.0",
-    "@types/jest": "^25.2.3",
+    "@types/jest": "^26.0.15",
     "moment": "^2.28.0",
     "npm-check": "^5.9.2",
     "rxjs": "^6.6.3",
