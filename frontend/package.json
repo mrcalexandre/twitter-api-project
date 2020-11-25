@@ -35,6 +35,6 @@
     "@angular/language-service": "9.1.12",
     "purgecss": "^2.3.0",
     "tslint": "6.0.0",
-    "typescript": "3.7.5"
+    "typescript": "3.8.3"
   }
 }
